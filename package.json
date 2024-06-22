@@ -1,0 +1,31 @@
+{
+  "name": "use-react-form",
+  "version": "1.0.0",
+  "description": "A tool to react forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspbmarques/use-react-form.git"
+  },
+  "keywords": [
+    "use",
+    "react",
+    "form"
+  ],
+  "author": "Matheus Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheuspbmarques/use-react-form/issues"
+  },
+  "homepage": "https://github.com/matheuspbmarques/use-react-form#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3"
+  }
+}
