@@ -13,7 +13,7 @@ type Error<T> = {[Input in keyof T]?: {
 interface UseReactForm<T>{
     handleSubmit: (event: React.FormEvent<HTMLFormElement>, submit: (data: T) => void) => void,
     registerInput: (name: keyof T) => Register,
-    formError: Error<T> | undefined,
+    formError: Error<T>,
     setInputError: (input: keyof T, message: string) => void,
     isSubmitting: boolean,
     setIsSubmitting: React.Dispatch<React.SetStateAction<boolean>>,
@@ -54,6 +54,7 @@ export default function useReactForm <T> (zodSchema: ZodSchema): UseReactForm<T>
 
         const result: T = {} as T
 
+        // @ts-ignore
         for (const inputName of formInputs){
             const inputValue = formData.getAll(inputName)
 
