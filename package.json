@@ -1,5 +1,5 @@
 {
-  "name": "use-react-form",
+  "name": "@matheuspbmarques/use-react-form",
   "version": "1.0.1",
   "description": "A tool to react forms",
   "main": "index.js",
